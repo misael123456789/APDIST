@@ -25130,3 +25130,7 @@ div.tagsinput {
     display: block;
   }
 }
+
+  select{
+  color:black !important;
+}
