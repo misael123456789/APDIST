@@ -1,0 +1,333 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+/* v1.0 | 20080212  http://meyerweb.com/eric/tools/css/reset/ */
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, a,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	text-decoration:none;
+}
+body {
+	line-height: 1;
+	/*font-family:Verdana, Arial, Helvetica, sans-serif;*/
+	/*font-family:verdana, helvetica, sans-serif;*/
+	font-family:Arial, Helvetica, sans-serif;
+	height:5000px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/****************************** 
+FIN DE LA LIMPIEZA
+*******************************/
+
+
+
+/* SpryMenuBarHorizontal.css - Revision: Spry Preview Release 1.4 */
+
+/* Copyright (c) 2006. Adobe Systems Incorporated. All rights reserved. */
+
+a#menu_hori1,a#menu_hori2,a#menu_hori3,a#menu_hori4,a#menu_hori5,a#menu_hori6,a#menu_hori7,a#menu_hori8,a#menu_hori9,
+a#menu_hori1s,a#menu_hori2s,a#menu_hori3s,a#menu_hori4s,a#menu_hori5s,a#menu_hori6s,a#menu_hori7s,a#menu_hori8s,a#menu_hori9s,
+a#menu_hori_item1,
+a#menu_hori_item2
+{
+	font-weight:bold;
+	background-image: url(boton_menu.gif);
+	background-repeat: no-repeat;
+	text-align:center;
+	width: 74px;
+	display:block;
+}
+
+a#menu_hori1,a#menu_hori2,a#menu_hori3,a#menu_hori5,
+a#menu_hori1s,a#menu_hori2s,a#menu_hori3s,a#menu_hori5s
+{
+	font-size: 12px;
+	height:26px;
+	padding:1px 0px 0px 0px;
+	margin:7px 0px 0px 7.5px;
+}
+a#menu_hori1s,a#menu_hori2s,a#menu_hori3s,a#menu_hori4s,a#menu_hori5s,a#menu_hori6s,a#menu_hori7s,a#menu_hori8s,a#menu_hori9s{
+	color:#666;
+	background-image: url(boton_menu3.gif);
+}
+
+
+a#menu_hori6,a#menu_hori8,
+a#menu_hori6s,a#menu_hori8s{
+	font-size: 11px;
+	height:26px;
+	padding:1px 0px 0px 0px;
+	margin:7px 0px 0px 7.5px;
+}
+a#menu_hori4,a#menu_hori9,
+a#menu_hori4s,a#menu_hori9s{
+	font-size: 12px;
+	height:22px;
+	padding:5px 0px 0px 0px;
+	margin:7px 0px 0px 7.5px;
+}
+a#menu_hori7,a#menu_hori7s{
+	font-size: 11px;
+	height:22px;
+	padding:5px 0px 0px 0px;
+	margin:7px 0px 0px 7.5px;
+}
+a#menu_hori_item1,a#menu_hori_item2{
+	font-size:12px;
+	height:26px;
+	padding: 6px 0px 0px 0px;
+	background-image: url(boton_menu_item1.gif);
+	background-repeat: no-repeat;
+	height:20px;
+	width:116px;
+	margin:0px 0px 0px 0px;
+}
+
+/*a#menu_hori1:visited,a#menu_hori2:visited,a#menu_hori3:visited,a#menu_hori4:visited,a#menu_hori5:visited,
+a#menu_hori6:visited,a#menu_hori7:visited,a#menu_hori8:visited,a#menu_hori9:visited
+{
+	color:#666;
+	background-image: url(boton_menu3.gif);
+	background-repeat: no-repeat;
+}*/
+
+
+a#menu_hori1:hover,a#menu_hori2:hover,a#menu_hori3:hover,a#menu_hori4:hover,a#menu_hori5:hover,a#menu_hori6:hover,
+a#menu_hori7:hover,a#menu_hori8:hover,a#menu_hori9:hover{
+	color:#666;
+	background-image: url(boton_menu3.gif);
+	background-repeat: no-repeat;
+}
+a#menu_hori_item1:hover,a#menu_hori_item2:hover{
+	color:#0CF;
+}
+
+/*a#menu_hori1:active,a#menu_hori2:active,a#menu_hori3:active,a#menu_hori4:active,a#menu_hori5:active,
+a#menu_hori6:active,a#menu_hori7:active,a#menu_hori8:active,a#menu_hori9:active{
+	color:#666;
+	background-image: url(boton_menu3.gif);
+	background-repeat: no-repeat;
+}*/
+/*a#menu_hori1:link,a#menu_hori2:link,a#menu_hori3:link,a#menu_hori4:link,a#menu_hori5:link,
+a#menu_hori6:link,a#menu_hori7:link,a#menu_hori8:link,a#menu_hori9:link{
+	color:#FFF;
+	background-image: url(boton_menu.gif);
+	background-repeat: no-repeat;
+}*/
+/*a#menu_hori1:visited,a#menu_hori2:visited,a#menu_hori3:visited,a#menu_hori4:visited,a#menu_hori5:visited,
+a#menu_hori6:visited,a#menu_hori7:visited,a#menu_hori8:visited,a#menu_hori9:visited{
+	color:#FFF;
+	background-image: url(boton_menu3.gif);
+	background-repeat: no-repeat;
+}*/
+
+
+
+
+
+/*******************************************************************************
+
+ LAYOUT INFORMATION: describes box model, positioning, z-order
+
+ *******************************************************************************/
+
+/* The outermost container of the Menu Bar, an auto width box with no margin or padding */
+ul.MenuBarHorizontal
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 100%;
+	cursor: default;
+	width: 700;
+	background-color: none;
+}
+/* Set the active Menu Bar with this class, currently setting z-index to accomodate IE rendering bug: http://therealcrisp.xs4all.nl/meuk/IE-zindexbug.html */
+ul.MenuBarActive
+{
+	z-index: 1000;
+}
+/* Menu item containers, position children relative to this container and are a fixed width */
+ul.MenuBarHorizontal li
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 100%;
+	position: relative;
+	text-align: left;
+	cursor: pointer;
+	width: 700;
+	float: left;
+}
+/* Submenus should appear below their parent (top: 0) with a higher z-index, but they are initially off the left side of the screen (-1000em) */
+ul.MenuBarHorizontal ul
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 100%;
+	z-index: 1020;
+	cursor: default;
+	width: 0px;
+	position: absolute;
+	left: -1000em;
+	border-style:none;
+}
+/* Submenu that is showing with class designation MenuBarSubmenuVisible, we set left to auto so it comes onto the screen below its parent menu item */
+ul.MenuBarHorizontal ul.MenuBarSubmenuVisible
+{
+	left: auto;
+}
+/* Menu item containers are same fixed width as parent */
+ul.MenuBarHorizontal ul li
+{
+	width: 116px;
+	border: none;
+}
+/* Submenus should appear slightly overlapping to the right (95%) and up (-5%) */
+ul.MenuBarHorizontal ul ul
+{
+	position: absolute;
+	margin: -5% 0 0 95%;
+}
+/* Submenu that is showing with class designation MenuBarSubmenuVisible, we set left to 0 so it comes onto the screen */
+ul.MenuBarHorizontal ul.MenuBarSubmenuVisible ul.MenuBarSubmenuVisible
+{
+	left: 0;
+	top: 0;
+}
+
+/*******************************************************************************
+
+ DESIGN INFORMATION: describes color scheme, borders, fonts
+
+ *******************************************************************************/
+
+/* Submenu containers have borders on all sides */
+ul.MenuBarHorizontal ul
+{
+	border: none;
+}
+/* Menu items are a light gray block with padding and no text decoration */
+ul.MenuBarHorizontal a
+{
+	display: block;
+	cursor: pointer;
+	background-color: none;
+	/*padding: 0.5em 0.75em;*/
+	color:#FFF;
+	text-decoration: none;
+	/*background-image: url(boton_menu2.gif);*/
+}
+/* Menu items that have mouse over or focus have a blue background and white text */
+ul.MenuBarHorizontal a:hover, ul.MenuBarHorizontal a:focus
+{
+	/*background-color: #3F3;*/
+	/*color:#33CCFF;*/
+	/*color:#00FF66;*/
+
+}
+/* Menu items that are open with submenus are set to MenuBarItemHover with a blue background and white text */
+ul.MenuBarHorizontal a.MenuBarItemHover, ul.MenuBarHorizontal a.MenuBarItemSubmenuHover, ul.MenuBarHorizontal a.MenuBarSubmenuVisible
+{
+	/*background-color: #33C;*/
+	/*color:#0CF;*/
+	/*color:#00FF33;*/
+}
+
+/*******************************************************************************
+
+ SUBMENU INDICATION: styles if there is a submenu under a given menu item
+
+ *******************************************************************************/
+
+/* Menu items that have a submenu have the class designation MenuBarItemSubmenu and are set to use a background image positioned on the far left (95%) and centered vertically (50%) */
+ul.MenuBarHorizontal a.MenuBarItemSubmenu
+{
+/*	background-image: url(SpryMenuBarDown.gif);
+	background-repeat: no-repeat;
+	background-position: 95% 50%;*/
+}
+/* Menu items that have a submenu have the class designation MenuBarItemSubmenu and are set to use a background image positioned on the far left (95%) and centered vertically (50%) */
+ul.MenuBarHorizontal ul a.MenuBarItemSubmenu
+{
+}
+/* Menu items that are open with submenus have the class designation MenuBarItemSubmenuHover and are set to use a "hover" background image positioned on the far left (95%) and centered vertically (50%) */
+ul.MenuBarHorizontal a.MenuBarItemSubmenuHover
+{
+}
+/* Menu items that are open with submenus have the class designation MenuBarItemSubmenuHover and are set to use a "hover" background image positioned on the far left (95%) and centered vertically (50%) */
+ul.MenuBarHorizontal ul a.MenuBarItemSubmenuHover
+{
+}
+
+/*******************************************************************************
+
+ BROWSER HACKS: the hacks below should not be changed unless you are an expert
+
+ *******************************************************************************/
+
+/* HACK FOR IE: to make sure the sub menus show above form controls, we underlay each submenu with an iframe */
+ul.MenuBarHorizontal iframe
+{
+	position: absolute;
+	z-index: 1010;
+}
+/* HACK FOR IE: to stabilize appearance of menu items; the slash in float is to keep IE 5.0 from parsing */
+@media screen, projection
+{
+	ul.MenuBarHorizontal li.MenuBarItemIE
+	{
+		display: inline;
+		f\loat: left;
+		background: none;
+	}
+}

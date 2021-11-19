@@ -1,4 +1,21 @@
 
+
+function loadMap(){
+  var mymap = L.map('mapid').setView([20.6685758,-103.3457626], 15);
+  L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+    maxZoom: 30,
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>',
+    id: 'mapbox/streets-v11',
+    accessToken: 'pk.eyJ1IjoibG9wZXI2MzEiLCJhIjoiY2tjb3llOWo4MDYxbzJ4cmdzYzYzZm95cSJ9.nq7X7geh7Ys_lGR6VkA9pg'
+  }).addTo(mymap);
+
+  L.marker([20.6685758,-103.3457626]).addTo(mymap);
+  mymap.scrollWheelZoom.disable();
+  mymap.on('click', () => { mymap.scrollWheelZoom.enable();});
+  mymap.on('mouseout', () => { mymap.scrollWheelZoom.disable();});
+}
+
+
 (function($) {
   'use strict';
   $(function() {
@@ -64,7 +81,6 @@
       }
     });
 
-
     // Settings sidebar toggle
     $('.settings-sidebar-toggler').on('click', function(e) {
       $('body').toggleClass('settings-open');
@@ -75,7 +91,6 @@
       $('body').removeClass('sidebar-light sidebar-dark');
       $('body').addClass($(this).val());
      })
-
 
     // sidebar-folded on large devices
     function iconSidebar(e) {
@@ -88,7 +103,6 @@
     var desktopMedium = window.matchMedia('(min-width:992px) and (max-width: 1199px)');
     desktopMedium.addListener(iconSidebar);
     iconSidebar(desktopMedium);
-
 
     //Add active class to nav-link based on url dynamically
     function addActiveClass(element) {
@@ -127,7 +141,6 @@
       var $this = $(this);
       addActiveClass($this);
     })
-
 
     //  open sidebar-folded when hover
     $(".sidebar .sidebar-body").hover(
@@ -198,7 +211,6 @@
 
   });
   
-  /*
 var target = document.querySelector("footer");
 var scrollToTopBtn = document.querySelector(".scrollToTopBtn")
 var rootElement = document.documentElement
@@ -212,7 +224,7 @@ function callback(entries, observer) {
   });
 }
 
-	function scrollToTop() {
+	/*function scrollToTop() {
 	  rootElement.scrollTo({
 		top: 0,
 		behavior: "smooth"
@@ -220,9 +232,9 @@ function callback(entries, observer) {
 	}
 	scrollToTopBtn.addEventListener("click", scrollToTop);
 	let observer = new IntersectionObserver(callback);
-	observer.observe(target);
+	observer.observe(target);*/
 
-	*/
+	
 
 
 })(jQuery);

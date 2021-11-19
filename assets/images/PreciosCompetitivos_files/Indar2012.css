@@ -1,0 +1,962 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* v1.0 | 20080212  http://meyerweb.com/eric/tools/css/reset/f */
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, a,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	text-decoration:none;
+}
+body {
+	line-height: 1;
+	/*font-family:Verdana, Arial, Helvetica, sans-serif;*/
+	/*font-family:verdana, helvetica, sans-serif;*/
+	font-family:Arial, Helvetica, sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html, body {
+min-height: 100%;
+height: auto !important;
+height: 100%;
+}
+
+/****************************** 
+FIN DE LA LIMPIEZA
+*******************************/
+/******************** DIV PARA LIMPIAR FLOATS *************************/
+div.clearfix {width:0px;height:0px;display:block;clear:both;content:",";}
+/******************** FIN DIV PARA LIMPIAR FLOATS *************************/
+
+/* ***************************************** Indar2012.php ********************************** */
+
+body  {
+	background:#99CCFF;
+	background:#FFF;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+}
+
+
+#cuerpo {
+/*float:left;*/
+background:#FFF;
+width:1024px;/*height:2000px;*/
+text-align:left;
+padding:0px;
+/*border: 1px;border-color:#69F;border-style:solid;*/
+margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+}
+#encabezado {
+width:1000px;height:105px;
+text-align: center;
+padding:0px;
+background: #FF0000;
+/*border: 1px;border-color:#69F;border-style:solid;*/
+}
+#logotipo {
+float:left;
+width:218px;height:66px;
+background: transparent url(Imagenes/HTML/Logo_Indar.jpg) no-repeat center center;
+border:none;border-style:none;
+/*text-align: center;*/
+padding:0px 0px 0px 0px;
+/*border: 1px;border-color:#69F;border-style:solid;*/
+/*display:block;*/
+border-top: 3px;border-top-color:#FF0000;border-top-style:solid;
+}
+#imagenMenu {
+/*float:left;*/
+position:absolute;
+bottom:0px;
+right:-20px;
+background: none;
+/*border: 1px;border-color:#69F;border-style:solid;*/
+
+}
+#botonMenuHi {
+float:left;
+color:#FFF;
+font-size: 10pt;font-weight:bold;text-align:center;
+width:85px;height:35px;
+padding:5px 5px 0px 5px;
+background: transparent url(SpryAssets/SpryAssets2012/botonH1.gif) no-repeat center center;
+border:none;border-style:none;
+}
+#botonMenuH1,#botonMenuH1s {
+float:left;
+color:#FFF;
+font-size: 10pt;font-weight:bold;text-align:center;
+width:85px;height:35px;
+padding:5px 5px 0px 5px;
+background: transparent url(SpryAssets/SpryAssets2012/botonH1.gif) no-repeat center center;
+border:none;border-style:none;
+}
+#botonMenuH1:hover,#botonMenuH1s {
+color:#FFF;
+background: transparent url(SpryAssets/SpryAssets2012/botonH2.gif) no-repeat center center;
+}
+/*#botonMenuH1s {
+color:#69C;
+background: transparent url(SpryAssets/SpryAssets2012/botonH2.gif) no-repeat center center;
+}*/
+/*#botonMenuH1:visited {
+color:#69C;
+background: transparent url(SpryAssets/SpryAssets2012/botonH2.gif) no-repeat center center;
+}*/
+#botonMenuH2a,#botonMenuH2b,#botonMenuH2c {
+float:left;
+color:#FFF;
+font-size: 8pt;font-weight:bold;text-align:center;
+width:145px;height:15px;
+padding:5px 5px 0px 5px;
+border:none;border-style:none;
+}
+#botonMenuH2a {background: transparent url(SpryAssets/SpryAssets2012/botonH1a.gif) no-repeat center center;}
+#botonMenuH2b {background: transparent url(SpryAssets/SpryAssets2012/botonH1b.gif) no-repeat center center;}
+#botonMenuH2c {background: transparent url(SpryAssets/SpryAssets2012/botonH1c.gif) no-repeat center center;}
+#botonMenuH2a:hover,#botonMenuH2b:hover,#botonMenuH2c:hover {
+color:#333;
+/*text-decoration:underline;*/
+}
+.shadow {
+     -moz-box-shadow: 3px 3px 4px #333333;
+     -webkit-box-shadow: 3px 3px 4px #333333;
+	 box-shadow: 3px 3px 4px #333333;     
+	 /* IE 8 */    
+/*	 -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#CCC')";*/
+	 -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#333333')";     
+	 /* IE 5.5 - 7 */    
+/*	 filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#333333');*/
+	 filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#333333');
+ }
+
+#botonMenu3,#botonMenu3s {
+float:left;
+color:#FFF;
+font-size: 8pt;font-weight:bold;text-align:center;
+width:154px;height:20px;
+padding: 5px 0px 0px 0px;
+margin: 5px 0px 0px 0px;
+/*background: transparent url(boton1.jpg) no-repeat center center;*/
+border:none;border-style:none;
+}
+#botonMenu3:hover,#botonMenu3s {
+color:#999;
+color:#CCC;
+/*cursor:hand;*/
+/*text-decoration:underline;*/
+}
+#usuario {
+float:left;
+color:#69C;
+font-size: 9pt;font-weight:bold;text-align:center;
+width:350px;height:30px;
+padding: 0px 0px 0px 0px;
+margin: 0px 0px 0px 0px;
+/*background: transparent url(boton1.jpg) no-repeat center center;*/
+border:none;border-style:none;
+}
+#botonMenu4 {
+float:left;
+color:#FFF;
+font-size: 9pt;font-weight:bold;text-align:center;
+width:50px;height:20px;
+padding: 5px 0px 0px 0px;
+margin: 5px 0px 0px 0px;
+/*background: transparent url(boton1.jpg) no-repeat center center;*/
+border:none;border-style:none;
+}
+
+#usuarioaccesar {
+float:left;
+color:#69C;
+font-size: 9pt;font-weight:bold;text-align:center;
+width:20px;height:20px;
+padding: 0px 0px 0px 5px;
+margin: 6px 0px 0px 0px;
+background: transparent url(Imagenes/HTML/pex_btn_chk_ok.gif) no-repeat center center;
+border:none;border-style:none;
+}
+#usuarioaccesar:hover {
+cursor:hand;
+}
+
+#botonMenu5 {
+float:left;
+color:#FF0000;
+color:#FF0000;
+font-size: 11pt;font-weight:bold;text-align:center;
+width:60px;height:23px;
+padding: 5px 0px 0px 0px;
+margin: 5px 0px 0px 0px;
+background: transparent url(Imagenes/HTML/boton_carrito.gif) no-repeat top center;
+border:none;border-style:none;
+/*border: 1px;border-color:#69F;border-style:solid;*/
+}
+#botonMenu6,#botonMenu6e {
+float:left;
+color:#FFFF00;
+color:#FF0000;
+font-size: 11pt;font-weight:bold;text-align:center;
+/* 218px;height:32px;*/
+width:218px;height:22px;
+padding: 10px 0px 0px 0px;
+margin: 0px 0px 0px 0px;
+background: transparent url(SpryAssets/SpryAssets2012/boton3.gif) no-repeat top center;
+border:none;border-style:none;
+/*border: 1px;border-color:#69F;border-style:solid;*/
+}
+#botonMenu6e {background:none;}
+
+#menu_categoria{
+float:left;
+width:225px;
+/*height:500px;*/
+/*position:relative;top:-370px;left:229px;*/
+/*border: 1px;border-color:#69F;border-style:solid;*/
+
+}
+#contenido{
+float:left;
+width:760px;
+margin:0px 0px 0px 30px;
+/*position:relative;top:-370px;left:229px;*/
+/*border: 1px;border-color:#69F;border-style:solid;*/
+}
+#contenido2{
+float:left;
+width:998px;
+height:400px;
+/*position:absolute;top:128px;/*left:262px;*/*/
+position:relative;top:-402px;left:229px;
+/*border: 1px;border-color:#69F;border-style:solid;*/
+/*border:none;*/
+/*padding: 0px 0px 0px 10px;*/
+margin: 0px 0px 0px 10px;
+}
+
+#cuadro_centro{
+float:left;
+width:494px;
+height:410px;
+/*position:absolute;top:158px;left:262px;*/
+color:#69F;
+padding:0px 0px 4px 8px;
+/*border: 1px;border-color:#33FF00;border-style:solid;*/
+/*background: transparent url(Imagenes/Inicio_Publicidad.jpg) no-repeat center center;*/
+}
+#cuadro_centro_boton{
+float:left;
+width:162px;
+height:133px;
+/*position:absolute;top:158px;left:262px;*/
+color:#69F;
+padding:0px 0px 0px 0px;
+/*border: 1px;border-color:#69F;border-style:solid;*/
+}
+#cuadro_centro_imagen{
+float:left;
+width:486px;
+height:133px;
+color:#69F;
+padding:0px 0px 5px 0px;
+/*background: transparent url(../../Imagenes/Articulos/Portada_Centro/Centro.jpg) no-repeat center center;*/
+background: transparent url(../Imagenes/Articulos/Portada_Centro/Centro.gif) no-repeat center center;
+}
+#cuadro_centro_imagen1{
+float:left;
+width:486px;
+height:133px;
+color:#69F;
+padding:0px 0px 5px 0px;
+/*background: transparent url(../../Imagenes/Articulos/Portada_Centro/Centro.jpg) no-repeat center center;*/
+background: transparent url(../Imagenes/Articulos/Portada_Centro/Centro1.gif) no-repeat center center;
+}
+#cuadro_centro_imagen2{
+float:left;
+width:486px;
+height:133px;
+color:#69F;
+padding:0px 0px 5px 0px;
+/*background: transparent url(../../Imagenes/Articulos/Portada_Centro/Centro.jpg) no-repeat center center;*/
+background: transparent url(../Imagenes/Articulos/Portada_Centro/Centro2.gif) no-repeat center center;
+}
+#cuadro_derecha{
+float:left;
+width:236px;
+height:400px;
+/*position:absolute;top:158px;left:758px;*/
+color:#69F;
+padding:0px 0px 4px 10px;
+/*border: 1px;border-color:#69F;border-style:solid;*/
+}
+#cuadro_derecha_arriba{
+float:left;
+width:236px;
+height:200px;
+/*position:absolute;top:158px;left:758px;*/
+color:#69F;
+/*border: 1px;border-color:#69F;border-style:solid;*/
+background: transparent url(Imagenes/HTML/Pedido_Express_fondo.gif) no-repeat top right;
+}
+
+
+
+
+#cuadro_derecha_arriba_titulo{
+width:236px;
+font-size: 12px;font-weight:bold;text-align:center;
+color:#FFF;
+color:#999;
+color:#000033;
+padding: 10px 0px 5px 0px;
+}
+#cuadro_derecha_arriba_titulo:hover {
+/*text-decoration:underline;*/
+color:#0000AA
+/*cursor: hand;*/
+}
+#pex_lbl{
+width:200px;
+height:15px;
+padding: 0px 0px 4px 0px;
+margin: 0px 0px 0px 17px;
+/*border: 1px;border-color:#69F;border-style:solid;*/
+}
+#pex_lbl_cant{
+float:left;
+width:42px;
+font-size: 11px;font-weight:bold;text-align:center;
+color:#FFF;
+color:#FFF;
+padding:0;
+/*border: 1px;border-color:#69F;border-style:solid;*/
+}
+#pex_lbl_codi{
+float:left;
+width:132px;
+font-size: 11px;font-weight:bold;text-align:center;
+color:#FFF;
+color:#FFF;
+padding:0;
+/*border: 1px;border-color:#69F;border-style:solid;*/
+}
+#pex_txt_cant{
+float:left;
+width:30px;
+height:15px;
+font-size: 12px;font-weight:bold;text-align:center;
+color:#06F;
+margin:1px 0px 0px 17px;
+padding:0px 0px 0px 0px;
+}
+#pex_txt_codi{
+float:left;
+width:150px;
+height:15px;
+font-size: 12px;font-weight:bold;
+color:#06F;
+margin:1px 0px 0px 2px;
+padding:0px 0px 0px 0px;
+}
+#pex_txt_chk{
+float:left;
+width:20px;height:20px;
+font-size:13px;font-weight:bold;text-align:center;
+color:#FFF;
+border:none;border-style:none;
+margin:1px 0px 0px 2px;
+padding:0px 0px 0px 0px;
+}
+#pex_txt_chk{
+background: transparent url(Imagenes/HTML/pex_btn_chk.gif) no-repeat top right;
+}
+/*#pex_txt_chk_ok{
+background: transparent url(Imagenes/HTML/pex_btn_chk_ok.gif) no-repeat top right;
+}*/
+#pex_txt_chk:hover{
+cursor:hand;
+}
+#pex_btn{
+float:right;
+width:236px;
+height:20px;
+margin:10px 17px 0px 0px;
+padding:0px 0px 0px 0px;
+}
+#pex_btn_comprar{
+float:right;
+width:60px;
+height:20px;
+font-size: 11px;font-weight:bold;
+background: transparent url(Imagenes/HTML/pex_btn_comprar.gif) no-repeat top right;
+color:#FFF;
+border:none;border-style:none;
+margin:0px 0px 0px 5px;
+padding:0px 0px 0px 0px;
+}
+#pex_btn_comprar:hover {
+/*text-decoration:underline;*/
+cursor:hand;
+}
+#pex_btn_limpiar{
+float:right;
+width:60px;height:20px;
+font-size: 11px;font-weight:bold;text-align:center;
+background: transparent url(Imagenes/HTML/pex_btn_comprar.gif) no-repeat top right;
+color:#FFF;
+border:none;border-style:none;
+margin:0px 0px 0px 5px;
+padding:5px 0px 0px 0px;
+}
+#pex_btn_limpiar:hover {
+cursor:hand;
+}
+
+/*************************/
+#cuadro_derecha_abajo{
+float:left;
+width:236px;height:200px;
+color:#FF0000;
+/*position:absolute;top:205px;left:496px;*/
+padding: 4px 0px 0px 0px;
+margin: 4px 0px 0px 0px;
+/*border: 1px;border-color:#69F;border-style:solid;*/
+background: transparent url(Imagenes/HTML/Pedido_Express_fondo2.gif) no-repeat top right;
+}
+#cuadro_derecha_abajo_titulo{
+width:236px;
+font-size: 12px;font-weight:bold;text-align:center;
+color:#FFF;
+color:#000033;
+padding: 7px 0px 0px 0px;
+}
+#cuadro_derecha_abajo_titulo:hover {
+color: #0066CC;
+/*text-decoration:underline;*/
+cursor:hand;
+}
+#cuadro_derecha_tabla{
+float:left;
+width:212px;height:84;
+font-size: 12px;font-weight:bold;
+}
+/* ********** */
+#cuadro_derecha_gdl{
+width:212px;
+height:77px;
+margin:5px 0px 0px 12px;
+background: transparent url(Imagenes/HTML/Pedido_Express_GDL.gif) no-repeat top right;
+}
+#gdl_info1{
+float:left;
+width:30px;height:70px;
+color:#FF0000;
+font-size: 12px;font-weight:bold;text-align:center;
+margin:0;padding: 0px 0px 0px 0px;
+}
+#gdl_info2{
+float:left;
+width:200px;height:7px;
+font-size: 11px;font-weight:bold;
+color:#FF0000;
+color:#FFF;
+margin:0;padding: 3px 0px 0px 5px;
+/*border: 1px;border-color:#69F;border-style:solid;*/
+}
+/* ********** */
+#cuadro_derecha_ags{
+width:212px;height:37px;
+margin:0px 0px 0px 12px;
+background: transparent url(Imagenes/HTML/Pedido_Express_2.gif) no-repeat top right;
+}
+#cuadro_derecha_leon{
+width:212px;height:37px;
+margin:0px 0px 0px 12px;
+background: transparent url(Imagenes/HTML/Pedido_Express_2.gif) no-repeat top right;
+}
+#ags_info1,#leon_info1{
+float:left;
+width:30px;height:30px;
+font-size: 11px;font-weight:bold;text-align:center;
+color:#FF0000;
+margin:0;padding: 0px 0px 0px 2px;
+}
+#ags_info2,#leon_info2{
+float:left;
+width:212px;height:7px;
+font-size: 11px;font-weight:bold;text-align:center;
+color:#FFF;
+margin:0;padding: 7px 0px 0px 0px;
+}
+/* ********** */
+
+#marcas_abajo{
+float:left;
+font-size: 11px;font-weight:bold;
+color:#FF0000;
+width:746px;height:30px;
+padding:0px 0px 0px 4px;
+/*border: 1px;border-color:#69F;border-style:solid;*/
+background: #FF0000;
+}
+/*#marcas_abajo_logo{
+float:left;
+font-size: 11px;font-weight:bold;text-align:center;
+color:#E07541;
+width:46px;height:16px;
+padding:5px 5px 5px 5px;
+border: 1px;border-color:#69F;border-style:solid;
+}*/
+
+
+#ligas{
+float:left;
+font-size: 11px;font-weight:bold;text-align:left;
+color:#E07541;
+width:730px;height:10px;
+padding:0px 0px 5px 5px;
+/*border: 1px;border-color:#69F;border-style:solid;*/
+}
+#liga{
+color:#E07541;
+}
+#liga:hover{
+text-decoration:underline;
+}
+
+#ligas_sociales{
+float:left;
+font-size: 11px;font-weight:bold;
+color:#E07541;
+width:216px;height:100px;
+padding:0;
+/*position:relative;top:0px;left:-765px;*/
+/*border: 1px;border-color:#69F;border-style:solid;*/
+}
+#safety{
+float:left;
+font-size: 11px;font-weight:bold;
+color:#E07541;
+width:200px;height:32px;
+padding:0;
+background: transparent url(../../Imagenes/HTML/safety.gif) no-repeat top center;
+/*border: 1px;border-color:#69F;border-style:solid;*/
+}
+
+#cliente_loguiado {
+width:336px;height:32px;
+border: 0;
+margin:2px 0px 0px 0px;
+/*border: 1px;border-color:#CCCCCC;border-style:solid;*/
+}
+#cliente_loguiado1 {
+float:left;
+width:265px;height: 8px;
+font-size: 9pt;font-weight:bold;text-align:right;
+color:#FFF;
+border:none;border-style:none;
+margin:2px 0px 0px 2px;
+}
+#cliente_loguiado2 {
+float:left;
+width:265px;height: 4px;
+font-size: 8pt;font-weight:bold;text-align:right;
+color:#333;
+border:none;border-style:none;
+margin:4px 0px 0px 2px;
+}
+#cliente_log_out {
+width: 54px;height: 22px;
+background: transparent url(Imagenes/HTML/boton_ingresar.gif) no-repeat top left;
+font-size:11px;font-weight:bold;text-align:center;
+color:#FFF;
+border:none;border-style:none;
+position:relative;top:7px;left:4px;
+margin:10px 0px 0px 0px;
+padding:2px 15px 6px 15px;
+}
+
+
+/* ***************************************** FIN Indar2012.php ********************************** */
+
+/* *************************************************************** DondeComprar.php */
+
+#donde_com_div {
+/*float:left;*/
+width:730px;
+/*height:1500px;*/
+/*border: 1px;border-color:#69F;border-style:solid;*/
+/*margin:0px;*/
+}
+#donde_com_titulo{
+font-size: 20px;font-weight:bold;text-align:center;
+color:#0066FF;
+/*color:#052769; /* COLOR AZUL FUERTE DE INDAR */
+/*color:#06F;*/
+padding:10px 0px 10px 0px;
+}
+#donde_com_imagen{
+width:730px;height:400px;
+background: transparent url(Imagenes/Donde_Comprar.jpg) no-repeat center center;
+}
+/********************************************************************** Contacto.php */
+#contacto_div {
+width:730px;
+height:500px;
+/*border: 1px;border-color:#69F;border-style:solid;*/
+/*margin:0px;*/
+}
+#contacto_div_1 {
+float:left;
+width:360px;
+/*height:500px;*/
+/*border: 1px;border-color:#69F;border-style:solid;*/
+/*margin:0px;*/
+}
+
+#contacto_tit1{
+/*float:left;*/
+font-size: 20px;font-weight:bold;text-align:center;
+/*color:#669;*/
+color:#052769; /* COLOR AZUL FUERTE DE INDAR */
+border-bottom:1px;border-bottom-color:#06F;border-bottom-style:solid;
+padding:20px 0px 20px 0px;
+}
+#contacto_tit2{
+width:350px;
+font-size: 18px;font-weight:bold;
+color:#052769; /* COLOR AZUL FUERTE DE INDAR */
+padding:10px 0px 0px 10px;
+}
+#contacto_tit3{
+width:365px;
+font-size: 14px;font-weight:bold;
+color:#052769; /* COLOR AZUL FUERTE DE INDAR */
+padding:10px 0px 0px 10px;
+}
+#contacto_cont1{
+float:left;
+width:365px;
+font-size: 12px;
+color:#06F;
+padding:10px 0px 20px 0px;
+}
+#contacto_cont1:hover{
+text-decoration:underline
+}
+
+/* *************************************************************** ClienteRegistro.php */
+#registrar_titulo{
+float:left;
+width:730px;height:10px;
+font-size: 12pt;font-weight:bold;text-align:center;
+color:#69F;
+padding:5px 0px 0px 5px;
+}
+#registrar_alerta{
+float:left;
+width:730px;height:10px;
+font-size: 10pt;font-weight:bold;text-align:center;
+color:#F00;
+padding:2px 0px 6px 5px;
+}
+#registrar_lblx{
+float:left;
+width:40px;
+font-size:12px;font-weight:bold;
+padding:5px 5px 2px 5px;
+}
+#registrar_lbl{
+float:left;
+width:140px;
+font-size:12px;font-weight:bold;
+padding:5px 5px 2px 5px;
+}
+#registrar_txt{
+float:left;
+font-size:12px;font-weight:bold;
+margin:2px 2px 2px 2px;
+}
+#registrar_rfc{
+float:left;
+font-size:12px;font-weight:bold;
+margin:2px 2px 2px 2px;
+}
+#nombre_lbl{
+float:left;
+width:420px;
+font-size:12px;font-weight:bold;
+padding:5px 5px 2px 5px;
+}
+
+#registrar_pie{
+float:left;
+width:600px;height:10px;
+font-size: 12px;font-weight:bold;text-align:center;
+color:#69F;
+margin:10px 2px 2px 2px;
+padding:5px 0px 5px 5px;
+}
+#ayuda1{
+float:left;
+background: transparent url(Imagenes/HTML/ayuda.gif) no-repeat center center;
+border:none;border-style:none;
+/*margin:10px 10px 10px 4px;*/
+padding:18px 6px 8px 10px;
+}
+#ejemplo_codigo{
+width:700px;height:400px;
+background: transparent url(Imagenes/HTML/ClienteEjemploCodigo.jpg) no-repeat center center;
+border:none;border-style:none;
+/*margin:10px 10px 10px 4px;*/
+/*padding:18px 6px 8px 10px;*/
+}
+
+#registrar_boton{
+/*float:right;*/
+background: transparent url(Imagenes/HTML/boton_ingresar.gif) no-repeat top center;
+width:54px;height:22px;
+font-size: 11px;font-weight:bold;text-align:center;
+color:#FFF;
+border:none;border-style:none;
+margin:10px 10px 10px 132px;
+padding:0;
+}
+#verificar_boton{
+/*float:right;*/
+background: transparent url(Imagenes/HTML/boton_ingresar.gif) no-repeat top center;
+width:54px;height:22px;
+font-size: 11px;font-weight:bold;text-align:center;
+color:#FFF;
+border:none;border-style:none;
+margin:0px 0px 0px 0px;
+padding:0;
+}
+#registrar_boton:hover,#verificar_boton:hover {
+cursor:hand;
+}
+
+/********************************************************************** QuienesSomos.php */
+#quienes_somos_titulo{
+font-size: 20px;font-weight:bold;text-align:center;
+/*color:#669;*/
+color:#052769; /* COLOR AZUL FUERTE DE INDAR */
+padding:20px 0px 30px 0px;
+}
+#quienes_somos_parrafo{
+font-size: 16px;
+width:700px;
+/*font-weight:bold;*/
+color:#052769; /* COLOR AZUL FUERTE DE INDAR */
+/*border-top:1px;border-top-color:#06F;border-top-style:solid;*/
+padding:20px 100px 0px 40px;
+}
+#quienes_somos_imagen1{
+width:730px;height:150px;
+background: transparent url(Imagenes/FOTO_GRUPAL.jpg) no-repeat center center;
+}
+#quienes_somos_imagen2{
+width:730px;height:200px;
+background: transparent url(Imagenes/QuienesSomos2.jpg) no-repeat center center;
+padding:30px 70px 0px 0px;
+}
+#quienes_somos_imagen3{
+width:730px;height:400px;
+background: transparent url(Imagenes/QuienesSomos3.jpg) no-repeat center center;
+}
+
+#quienes_somos_contacto{
+font-size: 12px;font-weight:bold;text-align:center;
+color:#052769; /* COLOR AZUL FUERTE DE INDAR */
+padding:20px 0px 30px 0px;
+}
+#quienes_somos_correo{
+color:#06F;
+}
+#quienes_somos_correo:hover{
+text-decoration:underline
+}
+/* *************************************************************** ProductosNuevos.php */
+
+#pnuevo_boton{
+float:left;
+width:180px;height:98px;
+font-size:11px;font-weight:bold;text-align:center;
+/*background: transparent url(Imagenes/Donde_Comprar.jpg) no-repeat center center;*/
+border: 1px;border-color:#FFF;border-style:solid;
+}
+#pnuevo_boton:hover{
+border: 1px;border-color:#999;border-style:solid;
+}
+/* *************************************************************** PoliticaGarantias.php */
+
+#pol_gar_imagen{
+width:730px;height:108px;
+background: transparent url(Imagenes/GARANTIA_EFECTIVA.jpg) no-repeat center center;
+}
+
+
+
+/***********************************************************************/
+#pie_pagina_general{
+float:left;
+font-size: 16px;
+width:738px;height:50px;
+font-size: 10px;font-weight:bold;/*font-weight:bold;*/
+color:#052769; /* COLOR AZUL FUERTE DE INDAR */
+border-top:1px;border-top-color:#06F;border-top-style:solid;
+padding:5px 0px 0px 10px;
+/*border:1px;border-color:#06F;border-style:solid;*/
+}
+#pie_pagina_arriba{
+float:left;
+width:738px;height:30px;
+}
+
+#pie_pagina_liga{
+float:left;
+/*width:80px;*/
+width:72px;
+/*height:20px;*/
+/*color:#06F;*/
+color:#666;
+text-align:center;
+/*border:1px;border-color:#06F;border-style:solid;*/
+}
+#pie_pagina_liga:hover{
+text-decoration:underline
+}
+#pie_pagina_liga_arriba{
+float:left;
+width:80px;height:20px;
+color:#06F; /* COLOR AZUL FUERTE DE INDAR */
+text-align:center;
+background: transparent url(Imagenes/HTML/flecha_arriba.gif) no-repeat center center;
+}
+#pie_pagina_web{
+color:#052769; /* COLOR AZUL FUERTE DE INDAR */
+padding:0px 0px 0px 126px;
+/*margin:20px 0px 0px 0px;*/
+background: transparent url(Imagenes/HTML/indarweb.JPG) no-repeat bottom center;
+/*border:1px;border-color:#06F;border-style:solid;*/
+}
+#pie_pagina_web:hover{background: transparent url(Imagenes/HTML/indarwebU.JPG) no-repeat bottom center;}
+
+
+#Excel_fijo {
+position:fixed; bottom:2px; right:2px; width:48px; height:48px; z-index:10;
+background: transparent url(../Imagenes/HTML/Excel48.gif) no-repeat bottom right;
+filter:alpha(opacity=50);
+-webkit-opacity: 0.5; /* PARA LOS OTROS NAVEGADORES */
+}
+#Excel_fijo:hover {
+filter:alpha(opacity=100);
+-webkit-opacity: 1; /* PARA LOS OTROS NAVEGADORES */
+}
+
+#icon_espera{
+	position:relative; top:130px; left:940px; width:24px; height:24px; z-index:10;
+	background: transparent url(Imagenes/HTML/espera.gif) no-repeat bottom right;
+}
+#icon_espera:hover{cursor:hand;}
+
+/*#icon_recarga0,#icon_recarga1,#icon_recarga2{
+	position:relative; top:130px; left:940px; width:24px; height:24px; z-index:10;
+	background: transparent url(Imagenes/HTML/espera.gif) no-repeat bottom right;
+}*/
+#icon_recarga0,#icon_recarga1,#icon_recarga2,#icon_recarga3,#icon_recarga4,#icon_recarga5,
+#icon_recarga6,#icon_recarga7,#icon_recarga8,#icon_recarga9,#icon_recarga10{
+	position:relative; top:-4px; left:490px; width:24px; height:24px; z-index:10;
+	background: transparent url(Imagenes/HTML/espera.gif) no-repeat bottom right;
+}
+
+/* *************************************************************** TuCuentaVendedorComisiones.php */
+
+#zcfd_0{
+float:left;width:170px;
+/*border:1px;border-color:#06F;border-style:solid;*/
+}
+#zcfd_tit1,#zcfd_tit2,#zcfd_tit3{
+float:left;
+width:990px;height:11px;
+font-size: 11pt;font-weight:bold;text-align:center;
+padding:15px 0px 5px 0px;
+/*border:1px;border-color:#06F;border-style:solid;*/
+}
+#zcfd_tit1,#zcfd_tit2{color:#69C;font-size:11pt;}
+#zcfd_tit2{font-size:10pt;
+padding:4px 0px 5px 0px;
+}
+/*#zcfd_tit2:hover{cursor:hand; text-decoration:underline;}*/
+#zcfd_tit3{
+height:14pt;width:990px;
+border:1px;border-color:#FFF;border-style:solid;
+background:#69C;
+color:#FFF;
+padding:4px 0px 0px 0px;
+}
+#zcfd_sel1{
+float:left;
+width:700px;height:10px;
+color:#69C;font-size: 11pt;font-weight:bold;text-align:left;
+padding:15px 0px 5px 0px;
+/*border:1px;border-color:#06F;border-style:solid;*/
+}
+
+
+
+
+
+
+
+
+
+
