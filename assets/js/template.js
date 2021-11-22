@@ -15,6 +15,11 @@ function loadMap(){
   mymap.on('mouseout', () => { mymap.scrollWheelZoom.disable();});
 }
 
+/*function openCtes(){
+  $('a[href="#ctes"]').attr("aria-expanded","true");
+  $("#ctes").addClass("show");
+}*/
+
 
 (function($) {
   'use strict';
@@ -64,6 +69,7 @@ function loadMap(){
     if ($('.content-nav-wrapper').length) {
       const contentNavWrapper = new PerfectScrollbar('.content-nav-wrapper');
     }
+
 
     // Sidebar toggle to sidebar-folded
     $('.sidebar-toggler').on('click', function(e) {
