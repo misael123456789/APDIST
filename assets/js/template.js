@@ -24,6 +24,7 @@ function loadMap(){
 (function($) {
   'use strict';
   $(function() {
+
     var body = $('body');
     var mainWrapper = $('.main-wrapper');
     var footer = $('footer');
@@ -183,12 +184,6 @@ function loadMap(){
     //checkbox and radios
     $(".form-check label,.form-radio label").append('<i class="input-frame"></i>');
 
-
-
-
-
-
-
     //Horizontal menu in mobile
     $('[data-toggle="horizontal-menu-toggle"]').on("click", function() {
       $(".horizontal-menu .bottom-navbar").toggleClass("header-toggled");
@@ -239,8 +234,4 @@ function callback(entries, observer) {
 	scrollToTopBtn.addEventListener("click", scrollToTop);
 	let observer = new IntersectionObserver(callback);
 	observer.observe(target);*/
-
-	
-
-
 })(jQuery);
