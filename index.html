@@ -40,7 +40,12 @@
       return globalLat+', '+globalLon;
     }
     function cargarMapa(lat,lon){
-        var container = L.DomUtil.get('mapadiv'); if(container != null){ container._leaflet_id = null; }
+        var container = L.DomUtil.get('mapadiv'); 
+        if(container != null){ 
+          //console.log(container._leaflet_id);
+          container._leaflet_id = null;
+        }
+        //document.getElementById("mapadiv").innerHTML = "";
         var mapadiv = L.map('mapadiv').setView([0,0], 15);
         globalLat = lat;
         globalLon = lon;
@@ -71,6 +76,6 @@
         //mapadiv.on('mouseout', () => { mapadiv.scrollWheelZoom.disable();});
       }
   </script>
-<script src="runtime.17d5d17a624cf729e0eb.js" defer></script><script src="polyfills.fdc2f93e8a9fe3125c92.js" defer></script><script src="main.65f88f887fb35f6f369c.js" defer></script>
+<script src="runtime.17d5d17a624cf729e0eb.js" defer></script><script src="polyfills.fdc2f93e8a9fe3125c92.js" defer></script><script src="main.d6354a526d9782cb6561.js" defer></script>
 
 </body></html>
