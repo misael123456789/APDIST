@@ -34,8 +34,8 @@
   <script src="assets/js/datepicker.js"></script>
   <script src="assets/js/template.js"></script>
   <script>
-    var globalLat = 0;
-    var globalLon = 0;
+    var globalLat = 20.6561242;
+    var globalLon = -103.279676;
     function getGlobalLocation(){
       return globalLat+', '+globalLon;
     }
@@ -46,7 +46,7 @@
           container._leaflet_id = null;
         }
         //document.getElementById("mapadiv").innerHTML = "";
-        var mapadiv = L.map('mapadiv').setView([0,0], 15);
+        var mapadiv = L.map('mapadiv').setView([20.6561242,-103.279676], 15);
         globalLat = lat;
         globalLon = lon;
 
@@ -76,6 +76,6 @@
         //mapadiv.on('mouseout', () => { mapadiv.scrollWheelZoom.disable();});
       }
   </script>
-<script src="runtime.17d5d17a624cf729e0eb.js" defer></script><script src="polyfills.fdc2f93e8a9fe3125c92.js" defer></script><script src="main.a99ef819768c37a1f7a3.js" defer></script>
+<script src="runtime.17d5d17a624cf729e0eb.js" defer></script><script src="polyfills.fdc2f93e8a9fe3125c92.js" defer></script><script src="main.8ae442f1314ed52579de.js" defer></script>
 
 </body></html>
