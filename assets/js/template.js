@@ -15,11 +15,10 @@ function loadMap(){
   mymap.on('mouseout', () => { mymap.scrollWheelZoom.disable();});
 }
 
-/*function openCtes(){
-  $('a[href="#ctes"]').attr("aria-expanded","true");
-  $("#ctes").addClass("show");
-}*/
-
+function activarMenu(menu){
+  document.getElementById(menu).classList.add("show");
+  document.getElementById(menu).parentElement.classList.add("active");
+}
 
 (function($) {
   'use strict';
