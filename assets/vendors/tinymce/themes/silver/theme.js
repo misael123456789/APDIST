@@ -25014,31 +25014,31 @@
     var defaultMenubar = 'file edit view insert format tools table help';
     var defaultMenus = {
       file: {
-        title: 'File',
+        title: 'Archivo',
         items: 'newdocument restoredraft | preview | print | deleteallconversations'
       },
       edit: {
-        title: 'Edit',
+        title: 'Editar',
         items: 'undo redo | cut copy paste pastetext | selectall | searchreplace'
       },
       view: {
-        title: 'View',
+        title: 'Vista',
         items: 'code | visualaid visualchars visualblocks | spellchecker | preview fullscreen | showcomments'
       },
       insert: {
-        title: 'Insert',
+        title: 'Insertar',
         items: 'image link media addcomment pageembed template codesample inserttable | charmap emoticons hr | pagebreak nonbreaking anchor toc | insertdatetime'
       },
       format: {
-        title: 'Format',
+        title: 'Formato',
         items: 'bold italic underline strikethrough superscript subscript codeformat | formats blockformats fontformats fontsizes align | forecolor backcolor | removeformat'
       },
       tools: {
-        title: 'Tools',
+        title: 'Herramientas',
         items: 'spellchecker spellcheckerlanguage | a11ycheck code wordcount'
       },
       table: {
-        title: 'Table',
+        title: 'Tabla',
         items: 'inserttable tableprops deletetable row column cell'
       },
       help: {
@@ -25704,37 +25704,37 @@
       global$e.each([
         {
           name: 'cut',
-          text: 'Cut',
+          text: 'Cortar',
           action: 'Cut',
           icon: 'cut'
         },
         {
           name: 'copy',
-          text: 'Copy',
+          text: 'Copiar',
           action: 'Copy',
           icon: 'copy'
         },
         {
           name: 'paste',
-          text: 'Paste',
+          text: 'Pegar',
           action: 'Paste',
           icon: 'paste'
         },
         {
           name: 'help',
-          text: 'Help',
+          text: 'Ayuda',
           action: 'mceHelp',
           icon: 'help'
         },
         {
           name: 'selectall',
-          text: 'Select all',
+          text: 'Seleccionar Todo',
           action: 'SelectAll',
           icon: 'select-all'
         },
         {
           name: 'newdocument',
-          text: 'New document',
+          text: 'Nuevo Documento',
           action: 'mceNewDocument',
           icon: 'new-document'
         },
@@ -25746,7 +25746,7 @@
         },
         {
           name: 'remove',
-          text: 'Remove',
+          text: 'Eliminar',
           action: 'Delete',
           icon: 'remove'
         }
@@ -25835,7 +25835,7 @@
         },
         {
           name: 'newdocument',
-          text: 'New document',
+          text: 'Nuevo Documento',
           action: 'mceNewDocument',
           icon: 'new-document',
           shortcut: ''
@@ -25849,21 +25849,21 @@
         },
         {
           name: 'copy',
-          text: 'Copy',
+          text: 'Copiar',
           action: 'Copy',
           icon: 'copy',
           shortcut: 'Meta+C'
         },
         {
           name: 'paste',
-          text: 'Paste',
+          text: 'Pegar',
           action: 'Paste',
           icon: 'paste',
           shortcut: 'Meta+V'
         },
         {
           name: 'selectall',
-          text: 'Select all',
+          text: 'Seleccionar Todo',
           action: 'SelectAll',
           icon: 'select-all',
           shortcut: 'Meta+A'
@@ -25905,7 +25905,7 @@
     };
     var registerMenuItems$1 = function (editor) {
       editor.ui.registry.addMenuItem('undo', {
-        text: 'Undo',
+        text: 'Deshacer',
         icon: 'undo',
         shortcut: 'Meta+Z',
         onSetup: function (api) {
@@ -25916,7 +25916,7 @@
         }
       });
       editor.ui.registry.addMenuItem('redo', {
-        text: 'Redo',
+        text: 'Rehacer',
         icon: 'redo',
         shortcut: 'Meta+Y',
         onSetup: function (api) {
@@ -26854,10 +26854,10 @@
       };
       var renderBranding = function () {
         var label = global$5.translate([
-          'Powered by {0}',
-          'Tiny'
+          ' ',
+          'SSJ'
         ]);
-        var linkHtml = '<a href="https://www.tiny.cloud/?utm_campaign=editor_referral&amp;utm_medium=poweredby&amp;utm_source=tinymce&amp;utm_content=v5" rel="noopener" target="_blank" tabindex="-1" aria-label="' + label + '">' + label + '</a>';
+        var linkHtml = '#';
         return {
           dom: {
             tag: 'span',

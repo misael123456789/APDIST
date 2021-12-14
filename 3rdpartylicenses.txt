@@ -66,6 +66,9 @@ MIT
 @angular/router
 MIT
 
+@tinymce/tinymce-angular
+Apache-2.0
+
 leaflet
 BSD-2-Clause
 Copyright (c) 2010-2019, Vladimir Agafonkin

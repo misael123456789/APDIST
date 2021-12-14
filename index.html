@@ -2,7 +2,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Proyecto</title>
+	<title>Sistema</title>
   <base href="/">
 	<link rel="stylesheet" href="assets/vendors/core/core.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/vendors/core/core.css"></noscript>
 	<link rel="stylesheet" href="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css"></noscript>
@@ -10,6 +10,8 @@
 	<style>:root{--blue:#5E50F9;--indigo:#6610f2;--purple:#6a008a;--pink:#E91E63;--red:#f96868;--orange:#f2a654;--yellow:#f6e84e;--green:#46c35f;--teal:#58d8a3;--cyan:#57c7d4;--white:#ffffff;--gray:#6c757d;--gray-dark:#0f1531;--blue:#5E50F9;--indigo:#6610f2;--purple:#6a008a;--pink:#E91E63;--red:#f96868;--orange:#f2a654;--yellow:#f6e84e;--green:#46c35f;--teal:#58d8a3;--cyan:#57c7d4;--white:#ffffff;--gray:#434a54;--gray-light:#aab2bd;--gray-lighter:#e8eff4;--gray-lightest:#e6e9ed;--black:#000000;--primary:#727cf5;--secondary:#7987a1;--success:#10b759;--info:#66d1d1;--warning:#fbbc06;--danger:#ff3366;--light:#ececec;--dark:#282f3a;--primary-muted:#b1cfec;--info-muted:#7ee5e5;--danger-muted:#f77eb9;--breakpoint-xs:0;--breakpoint-sm:576px;--breakpoint-md:768px;--breakpoint-lg:992px;--breakpoint-xl:1200px;--font-family-sans-serif:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";--font-family-monospace:SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}*,*::before,*::after{box-sizing:border-box}html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0, 0, 0, 0)}body{margin:0;font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#000;text-align:left;background-color:#fff}button{border-radius:0}button:focus{outline:1px dotted;outline:5px auto -webkit-focus-ring-color}button{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button{overflow:visible}button{text-transform:none}button{-webkit-appearance:button}button:not(:disabled){cursor:pointer}button::-moz-focus-inner{padding:0;border-style:none}.icon-inkar{font-size:22px !important}@media print{*,*::before,*::after{text-shadow:none !important;box-shadow:none !important}@page{size:a3}body{min-width:992px !important}}body{margin:0;padding:0}button::-moz-focus-inner{outline:0}button:focus{outline:none;outline-width:0;outline-color:transparent;box-shadow:none;outline-style:none}body,button,button:active,button:hover,button:visited{-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none}button,button:active,button:checked,button:hover,button:checked,button:visited{outline:0;outline-offset:0}body,html{padding-right:0 !important}body{margin:0;color:#000;text-align:left;background-color:#f9fafb;height:100%}*:-moz-full-screen,*:-webkit-full-screen,*:fullscreen *:-ms-full-screen{overflow:auto}body{font-family:"Overpass", sans-serif;font-size:0.875rem;font-weight:400;line-height:1.5;-webkit-font-smoothing:antialiased}.icon-inkar{font-size:22px !important}.scrollToTopBtn{background-color:#FF0000;border:none;border-radius:50%;color:white;cursor:pointer;font-size:16px;line-height:48px;width:53px;position:fixed;bottom:30px;right:30px;z-index:1000;opacity:0;transform:translateY(100px);transition:all .5s ease}</style><link rel="stylesheet" href="assets/css/demo_1/style.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/demo_1/style.css"></noscript>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css">
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoaPKOaRfjeI-g3cvq_dLkFBT69MwHr-s&amp;libraries=places&amp;language=en"></script>
+  <link rel="stylesheet" href="assets/vendors/jquery-tags-input/jquery.tagsinput.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/vendors/jquery-tags-input/jquery.tagsinput.min.css"></noscript>
+  <style>button{color:inherit;font:inherit;margin:0}button{overflow:visible}button{text-transform:none}button{-webkit-appearance:button;cursor:pointer}</style><link rel="stylesheet" href="assets/css/demo_1/jquery.typeahead.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/demo_1/jquery.typeahead.css"></noscript>
   <!--<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>-->
 <style>.mat-typography{font:400 14px/20px Roboto,Helvetica Neue,sans-serif;letter-spacing:normal}</style><link rel="stylesheet" href="styles.f4498ae7c22a5e92680d.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.f4498ae7c22a5e92680d.css"></noscript></head>
 
@@ -19,9 +21,10 @@
     </app-root>
   <!--</div>-->
   <button class="scrollToTopBtn"><em class="mdi mdi-arrow-up icon-inkar"></em></button>
-  <script src="assets/vendors/core/core.js"></script>
   <style>@font-face{font-family:"Material Design Icons";src:url("../fonts/materialdesignicons-webfont.eot?v=3.9.97");src:url("../fonts/materialdesignicons-webfont.eot?#iefix&v=3.9.97") format("embedded-opentype"),url("../fonts/materialdesignicons-webfont.woff2?v=3.9.97") format("woff2"),url("../fonts/materialdesignicons-webfont.woff?v=3.9.97") format("woff"),url("../fonts/materialdesignicons-webfont.ttf?v=3.9.97") format("truetype");font-weight:normal;font-style:normal}.mdi:before{display:inline-block;font:normal normal normal 24px/1 "Material Design Icons";font-size:inherit;text-rendering:auto;line-height:inherit;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.mdi-arrow-up::before{content:"\F05D"}</style><link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css"></noscript>
+  <script src="assets/vendors/core/core.js"></script>
   <script src="assets/vendors/chartjs/Chart.min.js"></script>
+  <script src="assets/vendors/jquery-tags-input/jquery.tagsinput.min.js"></script>
   <script src="assets/vendors/jquery.flot/jquery.flot.js"></script>
   <script src="assets/vendors/jquery.flot/jquery.flot.resize.js"></script>
   <script src="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
@@ -31,8 +34,13 @@
   <script src="assets/js/dashboard.js"></script>
   <script src="assets/js/datepicker.js"></script>
   <script src="assets/js/template.js"></script>
+  <script src="assets/vendors/typeahead.js/jquery.typeahead.js"></script>
+  <script src="assets/js/typeahead.js"></script>
+  <script src="assets/vendors/tinymce/tinymce.js" referrerpolicy="origin"></script>
+  <script src="assets/js/tags-input.js"></script>
   <script>
   </script>
-<script src="runtime.014d9d812217d0857819.js" defer></script><script src="polyfills.fdc2f93e8a9fe3125c92.js" defer></script><script src="main.3e8db7fc1b148e828c4f.js" defer></script>
+
+<script src="runtime.014d9d812217d0857819.js" defer></script><script src="polyfills.fdc2f93e8a9fe3125c92.js" defer></script><script src="main.55e52cb5c7aa762239e0.js" defer></script>
 
 </body></html>

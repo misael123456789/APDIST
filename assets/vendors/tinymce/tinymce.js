@@ -6,7 +6,14 @@
  *
  * Version: 5.0.16 (2019-09-24)
  */
-(function (domGlobals) {
+
+ function initTinymce(){
+
+
+
+
+
+  (function (domGlobals) {
     'use strict';
 
     var noop = function () {
@@ -28217,3 +28224,9 @@
     exportToModuleLoaders(tinymce);
 
 }(window));
+
+  tinymce.init({
+    selector: '#tinymceExample'
+  });
+  return true;
+}
