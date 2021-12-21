@@ -1,7 +1,9 @@
-function cargar_typeahead(estados){
+var id_user_selected = 0;
+
+function cargar_typeahead(datos){
         $(function() {
           'use strict'
-
+          
         var substringMatcher = function(strs) {
           return function findMatches(q, cb) {
             var matches, substringRegex;
@@ -23,64 +25,36 @@ function cargar_typeahead(estados){
             cb(matches);
           };
         };
-
-        /*var states = estados;
-
-        $('#the-basics .typeahead').typeahead({
-          hint: true,
-          highlight: true,
-          minLength: 1
-        }, {
-          name: 'states',
-          source: substringMatcher(states)
-        });*/
         
-        // constructs the suggestion engine
-        /*var states = new Bloodhound({
-          datumTokenizer: Bloodhound.tokenizers.whitespace,
-          queryTokenizer: Bloodhound.tokenizers.whitespace,
-          local: states
-        });*/
-
-        /*console.log('bloodhound', states);
-
-        $('#bloodhound .typeahead').typeahead({
-          hint: true,
-          highlight: true,
-          minLength: 1
-        }, {
-          name: 'states',
-          source: states
-        });*/
-
-
-
-
-
         $('#remitente').typeahead({
           minLength: 1,
           order: "asc",
           hint: true,
-          source: estados,
-          display: 'nombre',
+          source: datos,
+          display: 'nombres_cargo',
           callback: {
               onClickAfter: function (node, a, item, event) {
-                  /*$("#expediente").focus();
-                   $scope.$apply(function () {
-                          $scope.origen = item.id_cat_origen;
-                          $scope.origen_seleccionado = item.id_cat_origen;
-                          $scope.origen_texto_seleccionado = item.descripcion;
-                          $scope.origen_siglas_seleccionado = item.siglas;
-                          $("#expediente_real").val($("#expediente").val()+"/"+item.siglas);
-                  });*/
-                  alert("okokok");
+                  id_user_selected = item.id_user;
+                  $("#lnk_editar_typeahead").show();
+                  $('#remitente').attr('disabled','disabled');
               }
           },
           debug: true
       });
 
         $(".twitter-typeahead").css("width","100%");
-        //$('span[text*="File"]').hide();
+      });
+      $("#lnk_editar_typeahead").click(function(){
+        $("#lnk_editar_typeahead").hide();
+        $('#remitente').removeAttr('disabled').val('').focus();
+        id_user_selected = 0;
       });
 }
   
+function getValorTypeahead(){
+  return id_user_selected;
+}
+
+function setValorTypeahead(valor){
+  id_user_selected = valor;
+}

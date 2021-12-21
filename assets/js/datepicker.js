@@ -14,3 +14,15 @@ function initDatePicker(){
     }
   });
 }
+
+function getFechaEmision(){
+  return $("#fecha_emision").val();
+}
+
+function getFechaTermino(){
+  return $("#fecha_termino").val();
+}
+
+function getFechaInput(id_input){
+  return $("#"+id_input).val();
+}

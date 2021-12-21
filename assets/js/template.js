@@ -225,7 +225,6 @@ function activarMenu(menu){
       }
     });
   }
-  
     /*function scrollToTop() {
       rootElement.scrollTo({
       top: 0,
@@ -237,3 +236,26 @@ function activarMenu(menu){
     observer.observe(target);*/
   })(jQuery);
 //}
+function getValorCuerpoDocumento(){
+  return tinymce.get("tinymceExample").getContent()
+}
+function getValorTags(){
+  if($("#tags").val()){
+    return $("#tags").val();
+  }else{
+    //alert("no hay tags");
+  }
+}
+function setValorTags(valor){
+  try {
+    document.getElementById("tags_tag").value = valor;
+  } catch (error) {
+    window.location.reload();
+  } 
+}
+function lockTinymce(){
+  tinyMCE.get('tinymceExample').getBody().setAttribute('contenteditable', false);
+}
+function lockTagsInput(){
+  $('.tagsinput input').attr('disabled', 'disabled');
+}
