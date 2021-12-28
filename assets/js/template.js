@@ -31,6 +31,8 @@ function activarMenu(menu){
       var footer = $('footer');
       var sidebar = $('.sidebar');
       var navbar = $('.navbar').not('.top-navbar');
+
+      $(".loading").fadeOut(400);
   
       // Enable feather-icons with SVG markup
       feather.replace();
