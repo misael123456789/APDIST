@@ -11,7 +11,12 @@ function initDatePicker(){
         autoclose: true
       });
       $('.datePickerInput').datepicker('setDate', today);
+
     }
+
+    $('#datetimepickerExample').datetimepicker({
+      format: 'LT'
+    });
   });
 }
 
