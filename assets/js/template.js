@@ -261,3 +261,7 @@ function lockTinymce(){
 function lockTagsInput(){
   $('.tagsinput input').attr('disabled', 'disabled');
 }
+
+function closeModal(id_modal){
+  document.getElementById(id_modal).click();
+}
