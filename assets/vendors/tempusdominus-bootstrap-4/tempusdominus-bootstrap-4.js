@@ -131,8 +131,8 @@ var DateTimePicker = function ($, moment) {
         icons: {
             time: 'fa fa-clock-o',
             date: 'fa fa-calendar',
-            up: 'fa fa-arrow-up',
-            down: 'fa fa-arrow-down',
+            up: 'mdi mdi-arrow-up',
+            down: 'mdi mdi-arrow-down',
             previous: 'fa fa-chevron-left',
             next: 'fa fa-chevron-right',
             today: 'fa fa-calendar-check-o',
@@ -346,7 +346,7 @@ var DateTimePicker = function ($, moment) {
             this.unset = true;
             this.component = false;
             this.widget = false;
-            this.use24Hours = null;
+            this.use24Hours = true;
             this.actualFormat = null;
             this.parseFormats = null;
             this.currentViewMode = null;
@@ -363,6 +363,7 @@ var DateTimePicker = function ($, moment) {
         //private
 
         DateTimePicker.prototype._int = function _int() {
+            this.use24Hours = true;
             var targetInput = this._element.data('target-input');
             if (this._element.is('input')) {
                 this.input = this._element;

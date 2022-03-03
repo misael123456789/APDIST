@@ -3,6 +3,8 @@ $(function() {
   'use strict';
 
   $('#datetimepickerExample').datetimepicker({
-    format: 'LT'
+    format: 'LT',
+    timeFormat: "HH:mm:ss",
+    use24Hours = true,
   });
 });

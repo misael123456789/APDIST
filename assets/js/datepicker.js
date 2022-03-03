@@ -7,6 +7,7 @@ function initDatePicker(){
       var today = new Date(date.getFullYear(), date.getMonth(), date.getDate());
       $('.datePickerInput').datepicker({
         format: "yyyy-mm-dd",
+        use24hours: true,
         todayHighlight: true,
         autoclose: true
       });
@@ -15,7 +16,8 @@ function initDatePicker(){
     }
 
     $('#datetimepickerExample').datetimepicker({
-      format: 'LT'
+      format: 'LT',
+      use24hours: true
     });
   });
 }
