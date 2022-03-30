@@ -15,9 +15,16 @@ function loadMap(){
   mymap.on('mouseout', () => { mymap.scrollWheelZoom.disable();});
 }
 
-function activarMenu(menu){
+function activarMenu(menu, submenu = ''){
+  $(".nav-item").removeClass("active");
   document.getElementById(menu).classList.add("show");
   document.getElementById(menu).parentElement.classList.add("active");
+  console.log('1', $(".nav-link").removeClass("active"));
+  //document.getElementsByClassName("nav-link").classList.remove("active");
+  console.log(submenu);
+  if(submenu!=''){
+    document.getElementById(submenu).classList.add("active");
+  }
 }
 
 
